@@ -8,13 +8,7 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 import { headerData } from "../../data/headerData";
 import { socialsData } from "../../data/socialsData";
 
-import {
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
-  FaYoutube,
-  FaBlogger,
-} from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Landing() {
   const { theme, drawerOpen } = useContext(ThemeContext);
@@ -29,6 +23,7 @@ function Landing() {
       fontSize: "1rem",
       fontWeight: "500",
       height: "50px",
+      zIndex: 99,
       fontFamily: "var(--primaryFont)",
       border: `3px solid ${theme.primary}`,
       transition: "100ms ease-out",

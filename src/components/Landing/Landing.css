@@ -202,10 +202,10 @@
     text-align: center;
   }
   .lcr--content p {
-    font-size: 0.95rem;
-    text-align: center;
+    font-size: 0.85rem;
+    /* text-align: center; */
     margin: 0 auto;
-    width: 90%;
+    /* width: 90%; */
   }
   .lcr-buttonContainer {
     margin: 0 auto;
@@ -215,6 +215,7 @@
   }
   .lcr-buttonContainer button {
     margin-top: -20%;
+    z-index: 99;
   }
   /* .landing{
     height: 280vh;

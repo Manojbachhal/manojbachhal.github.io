@@ -85,12 +85,12 @@
 
 @media screen and (max-width: 992px){
 
-  .about .line-styling{
+  /* .about .line-styling{
     top: 20px;
-  }
+  } */
 
     .about-body {
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
