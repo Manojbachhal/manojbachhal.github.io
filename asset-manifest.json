@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.63ea0289.chunk.css",
-    "main.js": "/static/js/main.23ddabe4.chunk.js",
-    "main.js.map": "/static/js/main.23ddabe4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8562d45f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8562d45f.js.map",
+    "main.css": "/static/css/main.a5087307.chunk.css",
+    "main.js": "/static/js/main.c9b9bb66.chunk.js",
+    "main.js.map": "/static/js/main.c9b9bb66.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c3021270.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c3021270.js.map",
     "static/css/2.19627560.chunk.css": "/static/css/2.19627560.chunk.css",
-    "static/js/2.ebbc6cd2.chunk.js": "/static/js/2.ebbc6cd2.chunk.js",
-    "static/js/2.ebbc6cd2.chunk.js.map": "/static/js/2.ebbc6cd2.chunk.js.map",
-    "static/js/3.ef78cbd1.chunk.js": "/static/js/3.ef78cbd1.chunk.js",
-    "static/js/3.ef78cbd1.chunk.js.map": "/static/js/3.ef78cbd1.chunk.js.map",
+    "static/js/2.9736c0e0.chunk.js": "/static/js/2.9736c0e0.chunk.js",
+    "static/js/2.9736c0e0.chunk.js.map": "/static/js/2.9736c0e0.chunk.js.map",
+    "static/js/3.7d59c648.chunk.js": "/static/js/3.7d59c648.chunk.js",
+    "static/js/3.7d59c648.chunk.js.map": "/static/js/3.7d59c648.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.19627560.chunk.css.map": "/static/css/2.19627560.chunk.css.map",
-    "static/css/main.63ea0289.chunk.css.map": "/static/css/main.63ea0289.chunk.css.map",
-    "static/js/2.ebbc6cd2.chunk.js.LICENSE.txt": "/static/js/2.ebbc6cd2.chunk.js.LICENSE.txt",
+    "static/css/main.a5087307.chunk.css.map": "/static/css/main.a5087307.chunk.css.map",
+    "static/js/2.9736c0e0.chunk.js.LICENSE.txt": "/static/js/2.9736c0e0.chunk.js.LICENSE.txt",
     "static/media/Beauty.f533fefb.png": "/static/media/Beauty.f533fefb.png",
     "static/media/index.css": "/static/media/BestermindRegular.e58a1922.ttf",
     "static/media/Css.6ad1e401.png": "/static/media/Css.6ad1e401.png",
@@ -80,10 +80,10 @@
     "static/media/yellowTheme-girl.641f7b0b.svg": "/static/media/yellowTheme-girl.641f7b0b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8562d45f.js",
+    "static/js/runtime-main.c3021270.js",
     "static/css/2.19627560.chunk.css",
-    "static/js/2.ebbc6cd2.chunk.js",
-    "static/css/main.63ea0289.chunk.css",
-    "static/js/main.23ddabe4.chunk.js"
+    "static/js/2.9736c0e0.chunk.js",
+    "static/css/main.a5087307.chunk.css",
+    "static/js/main.c9b9bb66.chunk.js"
   ]
 }
