@@ -13,6 +13,7 @@ export const achievementData = {
       date: "Feb 26, 2023",
       field: "DSA",
       image: java,
+      url: "https://www.hackerrank.com/certificates/5ffa757cd1e9",
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ export const achievementData = {
       date: "Feb 26, 2023",
       field: "Coding",
       image: CSS,
+      url: "https://www.hackerrank.com/certificates/f9c313ae05e6",
     },
     {
       id: 3,
@@ -29,6 +31,7 @@ export const achievementData = {
       date: "Feb 26, 2023",
       field: "Coding",
       image: JsB,
+      url: "https://www.hackerrank.com/certificates/f22b1bea41a6",
     },
     {
       id: 4,
@@ -37,6 +40,7 @@ export const achievementData = {
       date: "Feb 28, 2021",
       field: "Coding",
       image: Jsm,
+      url: "https://www.hackerrank.com/certificates/fdb26a1c0508",
     },
   ],
 };
