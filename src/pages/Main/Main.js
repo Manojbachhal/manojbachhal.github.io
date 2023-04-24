@@ -32,9 +32,9 @@ function Main() {
       <Achievement />
       <Experience />
       {/* <Blog /> */}
+      <GithubCalenderComp />
       <Contacts />
       {/* <Footer /> */}
-      {/* <GithubCalenderComp /> */}
     </div>
   );
 }

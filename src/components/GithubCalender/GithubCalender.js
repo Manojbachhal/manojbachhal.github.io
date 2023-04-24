@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import "./GithubCalender.css";
+// import { ThemeContext } from "../../contexts/ThemeContext";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import GitHubCalendar from "react-github-calendar";
 
 function GithubCalenderComp() {
   const { theme } = useContext(ThemeContext);
-
+  console.log(theme);
   return (
     <div className="mainContainer" style={{ backgroundColor: theme.secondary }}>
       <div className="Github--header">
@@ -20,13 +21,13 @@ function GithubCalenderComp() {
           blockRadius="10"
           number="16"
           username="manojbachhal"
-          theme={{
-            level0: "#ebedf0",
-            level1: "#99bbff",
-            level2: "#6699ff",
-            level3: "#3377ff",
-            level4: "#F73859",
-          }}
+          // theme={{
+          //   level0: "#ebedf0",
+          //   level1: "#99bbff",
+          //   level2: "#6699ff",
+          //   level3: "#3377ff",
+          //   level4: "#F73859",
+          // }}
         />
       </div>
       <div className="State--header">
@@ -36,7 +37,7 @@ function GithubCalenderComp() {
         <img
           align="center"
           src={`https://github-readme-stats.vercel.app/api?username=manojbachhal&amp;show_icons=true&amp;locale=en`}
-          alt="manojbachhal"
+          alt="Ramanpreet4718"
         />
         <img
           align="center"
