@@ -137,8 +137,8 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar" id="nav-menu">
-      <div className="navbar--container">
+    <div className="navbar">
+      <div className="navbar--container" id="nav-menu">
         <h1 style={{ color: theme.secondary }}>{shortname(headerData.name)}</h1>
 
         <IoMenuSharp

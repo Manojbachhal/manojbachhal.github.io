@@ -276,6 +276,7 @@ function Contacts() {
             <a
               href={`mailto:${contactsData.email}`}
               className="personal-details"
+              id="contact-email"
             >
               <div className={classes.detailsIcon}>
                 <FiAtSign />
@@ -289,7 +290,9 @@ function Contacts() {
               <div className={classes.detailsIcon}>
                 <FiPhone />
               </div>
-              <p style={{ color: theme.tertiary }}>{contactsData.phone}</p>
+              <p style={{ color: theme.tertiary }} id="contact-phone">
+                {contactsData.phone}
+              </p>
             </a>
             <div className="personal-details">
               <div className={classes.detailsIcon}>
