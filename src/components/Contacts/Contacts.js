@@ -318,6 +318,7 @@ function Contacts() {
                   target="_blank"
                   rel="noreferrer"
                   className={classes.socialIcon}
+                  id="contact-github"
                 >
                   <FaGithub aria-label="GitHub" />
                 </a>
