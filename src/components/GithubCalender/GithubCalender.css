@@ -1,0 +1,48 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 2rem;
+  }
+  .Github--header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+  }
+  
+  .Github--header h1 {
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+    font-family: var(--primaryFont);
+  }
+  
+  .border-Div {
+    padding: 2rem 4rem;
+    border: 10px solid #545fc4;
+    border-radius: 50px 5px;
+  }
+  
+  .stats-Div {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .State--header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+  }
+  
+  .State--header h1 {
+    margin: 40px 0;
+    font-size: 2.5rem;
+    font-family: var(--primaryFont);
+  }

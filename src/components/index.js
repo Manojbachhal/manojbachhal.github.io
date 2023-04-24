@@ -12,3 +12,4 @@ export { default as SingleProject } from "./Projects/SingleProject/SingleProject
 export { default as Achievement } from "./Achievement/Achievement";
 
 export { default as BackToTop } from "./BackToTop/BackToTop";
+export { default as GithubCalenderComp } from "./GithubCalender/GithubCalender";

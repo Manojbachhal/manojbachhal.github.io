@@ -12,6 +12,7 @@ import {
   Contacts,
   Projects,
   Achievement,
+  GithubCalenderComp,
 } from "../../components";
 import { headerData } from "../../data/headerData";
 
@@ -33,6 +34,7 @@ function Main() {
       {/* <Blog /> */}
       <Contacts />
       {/* <Footer /> */}
+      {/* <GithubCalenderComp /> */}
     </div>
   );
 }

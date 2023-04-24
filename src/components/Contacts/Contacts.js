@@ -329,6 +329,7 @@ function Contacts() {
                   target="_blank"
                   rel="noreferrer"
                   className={classes.socialIcon}
+                  id="contact-linkedin"
                 >
                   <FaLinkedinIn aria-label="LinkedIn" />
                 </a>

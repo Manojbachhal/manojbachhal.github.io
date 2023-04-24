@@ -36,9 +36,22 @@ function Skills() {
             direction="left"
           >
             {skillsData.map((skill, id) => (
-              <div className="skill--box" key={id} style={skillBoxStyle}>
-                <img src={skillsImage(skill)} alt={skill} />
-                <h3 style={{ color: theme.tertiary }}>{skill}</h3>
+              <div
+                className="skill--box skills-card"
+                key={id}
+                style={skillBoxStyle}
+              >
+                <img
+                  src={skillsImage(skill)}
+                  alt={skill}
+                  className="skills-card-img"
+                />
+                <h3
+                  style={{ color: theme.tertiary }}
+                  className="skills-card-name"
+                >
+                  {skill}
+                </h3>
               </div>
             ))}
           </Marquee>

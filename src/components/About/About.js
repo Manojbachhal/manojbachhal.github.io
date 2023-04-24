@@ -29,10 +29,12 @@ function About() {
       <div className="about-body">
         <div className="about-description">
           <h2 style={{ color: theme.primary }}>{aboutData.title}</h2>
-          <p style={{ color: theme.tertiary80 }}>
+          <p style={{ color: theme.tertiary80 }} id="user-detail-name">
             {aboutData.description1}
             <br />
             <br />
+          </p>
+          <p style={{ color: theme.tertiary80 }} id="user-detail-intro">
             {aboutData.description2}
           </p>
         </div>
