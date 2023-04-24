@@ -157,7 +157,7 @@ function Contacts() {
   return (
     <div
       className="contacts"
-      id="contacts"
+      id="contact"
       style={{ backgroundColor: theme.secondary }}
     >
       <div className="contacts--container">

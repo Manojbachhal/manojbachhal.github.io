@@ -137,7 +137,7 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar">
+    <div className="navbar" id="nav-menu">
       <div className="navbar--container">
         <h1 style={{ color: theme.secondary }}>{shortname(headerData.name)}</h1>
 
@@ -183,7 +183,13 @@ function Navbar() {
         <div onClick={handleDrawerClose}>
           <div className="navLink--container">
             <Fade left>
-              <NavLink to="/" smooth={true} spy="true" duration={2000}>
+              <NavLink
+                to="/"
+                smooth={true}
+                spy="true"
+                duration={2000}
+                className={"nav-link home"}
+              >
                 <div className={classes.drawerItem}>
                   <IoHomeSharp className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>Home</span>
@@ -192,7 +198,13 @@ function Navbar() {
             </Fade>
 
             <Fade left>
-              <NavLink to="/#about" smooth={true} spy="true" duration={2000}>
+              <NavLink
+                to="/#about"
+                smooth={true}
+                spy="true"
+                duration={2000}
+                className={"nav-link about"}
+              >
                 <div className={classes.drawerItem}>
                   <FaUser className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>About</span>
