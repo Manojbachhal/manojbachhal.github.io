@@ -18,6 +18,7 @@ function GithubCalenderComp() {
             color: "white",
             fontFamily: "var(--primaryFont)",
           }}
+          id="github-stats-card"
           blockRadius="10"
           number="16"
           username="manojbachhal"
@@ -36,13 +37,16 @@ function GithubCalenderComp() {
       <div className="stats-Div">
         <img
           align="center"
+          id="github-top-langs"
           src={`https://github-readme-stats.vercel.app/api?username=manojbachhal&amp;show_icons=true&amp;locale=en`}
-          alt="Ramanpreet4718"
+          // src={`https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide_progress=true)](https://github.com/anuraghazra/github-readme-stats)`}
+          alt="Manojbachhal"
         />
         <img
+          id="github-streak-stats"
           align="center"
           src={`https://github-readme-streak-stats.herokuapp.com/?user=manojbachhal;`}
-          alt="mohitkss"
+          alt="manojbachhal"
         />
       </div>
     </div>
