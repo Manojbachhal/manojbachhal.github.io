@@ -171,11 +171,17 @@ function Navbar() {
             Contact
           </NavLink>
           <NavLink className="nav-link resume" to="/#resume">
-            {/* Resume */}
-            <a href={resume} download id="resume-button-1">
-              {" "}
-              Resume
-            </a>
+            <Button
+              className={classes.resumeBtn}
+              onClick={() => {
+                window.open(
+                  "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
+                );
+              }}
+              id="resume-button-1"
+            >
+              Download CV
+            </Button>
           </NavLink>
         </Box>
         {/* temp div end */}
