@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Button } from "@material-ui/core";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 import { makeStyles } from "@material-ui/core/styles";
-
+import resume from "../../assets/pdf/resume.pdf";
 import "./Landing.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { headerData } from "../../data/headerData";
@@ -111,7 +111,7 @@ function Landing() {
               {headerData.resumePdf && (
                 <a
                   href={headerData.resumePdf}
-                  download="resume"
+                  download={resume}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -122,7 +122,7 @@ function Landing() {
                         "https://drive.google.com/file/d/1U8x4DKkLwn9k8Vi1fquqlAz5C1hf8brY/view?usp=share_link"
                       );
                     }}
-                    // id="resume-button-2"
+                    id="resume-button-2"
                   >
                     Download CV
                   </Button>
