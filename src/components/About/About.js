@@ -5,19 +5,7 @@ import { aboutData } from "../../data/aboutData";
 
 function About() {
   const { theme } = useContext(ThemeContext);
-  const handleClick = () => {
-    window.open(
-      "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
-    );
-    const url =
-      "https://drive.google.com/u/0/uc?id=1U8x4DKkLwn9k8Vi1fquqlAz5C1hf8brY&export=download";
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "file.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  //
   return (
     <div
       className="about about section"
@@ -57,16 +45,6 @@ function About() {
           />
         </div>
       </div>
-      <p
-        // href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
-        // download
-        style={{ color: "red" }}
-        className="nav-link resume"
-        id="resume-button-2"
-        onClick={handleClick}
-      >
-        resume
-      </p>
     </div>
   );
 }

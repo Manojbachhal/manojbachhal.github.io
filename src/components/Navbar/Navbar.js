@@ -195,7 +195,7 @@ function Navbar() {
             // download
             style={{ color: "red" }}
             className="nav-link resume"
-            id="resume-button-1"
+            id="resume-button-2"
             onClick={handleClick}
           >
             resume

@@ -24,7 +24,7 @@ export const projectsData = [
   },
   {
     id: 3,
-    projectName: "Ikea",
+    projectName: "Ikea ",
     projectDesc:
       "IKEA is a Swedish multinational furniture retailer that designs and sells ready-to-assemble furniture, kitchen appliances and other household goods. It is a collaborative project of three members which was completed in 5 days.",
     tags: ["React", "Redux", "HTML", "CSS", "Javascript", "Bootstrap"],
@@ -34,7 +34,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    projectName: "Ikea",
+    projectName: "Ikea Full Stack",
     projectDesc:
       "IKEA is a Swedish multinational furniture retailer that designs and sells ready-to-assemble furniture, kitchen appliances and other household goods. It is a collaborative project of three members which was completed in 5 days.",
     tags: [
