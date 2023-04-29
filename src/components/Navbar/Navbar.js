@@ -171,7 +171,11 @@ function Navbar() {
             Contact
           </NavLink>
           <NavLink className="nav-link resume" to="/#resume">
-            Resume
+            {/* Resume */}
+            <a href={resume} download id="resume-button-1">
+              {" "}
+              Resume
+            </a>
           </NavLink>
         </Box>
         {/* temp div end */}
