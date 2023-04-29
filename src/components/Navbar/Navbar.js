@@ -138,150 +138,162 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar" id="nav-menu">
-      <div className="navbar--container">
-        <h1 style={{ color: theme.secondary }} id="user-detail-name">
-          {shortname(headerData.name)}
-        </h1>
+    <>
+      <div className="navbar" id="nav-menu">
+        <div className="navbar--container">
+          <h1 style={{ color: theme.secondary }} id="user-detail-name">
+            {shortname(headerData.name)}
+          </h1>
 
-        <IoMenuSharp
-          className={classes.navMenu}
-          onClick={handleDrawerOpen}
-          aria-label="Menu"
-          id="navicon"
-        />
-      </div>
-      <Box>
-        <NavLink className="nav-link home" to="/">
-          Home
-        </NavLink>
-        <NavLink className="nav-link about" to="/about">
-          About
-        </NavLink>
-        <NavLink className="nav-link skills" to="/skills">
-          Skills
-        </NavLink>
-        <NavLink className="nav-link projects" to="/projects">
-          Projects
-        </NavLink>
-        <NavLink className="nav-link contact" to="/contact">
-          Contact
-        </NavLink>
-      </Box>
-      <Drawer
-        variant="temporary"
-        onClose={(event, reason) => {
-          if (reason !== "backdropClick") {
-            handleDrawerClose();
-          } else if (reason !== "escapeKeyDown") {
-            handleDrawerClose();
-          }
-        }}
-        anchor="left"
-        open={open}
-        classes={{ paper: classes.MuiDrawer }}
-        className="drawer"
-        disableScrollLock={true}
-      >
-        <div className="div-closebtn">
-          <CloseIcon
-            onClick={handleDrawerClose}
-            onKeyDown={(e) => {
-              if (e.key === " " || e.key === "Enter") {
-                e.preventDefault();
-                handleDrawerClose();
-              }
-            }}
-            className={classes.closebtnIcon}
-            role="button"
-            tabIndex="0"
-            aria-label="Close"
+          <IoMenuSharp
+            className={classes.navMenu}
+            onClick={handleDrawerOpen}
+            aria-label="Menu"
+            id="navicon"
           />
         </div>
-        <br />
-
-        <div onClick={handleDrawerClose}>
-          <div className="navLink--container">
-            <Fade left>
-              <NavLink to="/" smooth={true} spy="true" duration={2000}>
-                <div className={classes.drawerItem}>
-                  <IoHomeSharp className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Home</span>
-                </div>
-              </NavLink>
-            </Fade>
-
-            <Fade left>
-              <NavLink
-                to="/#about"
-                smooth={true}
-                spy="true"
-                duration={2000}
-                className={"nav-link about"}
-              >
-                <div className={classes.drawerItem}>
-                  <FaUser className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>About</span>
-                </div>
-              </NavLink>
-            </Fade>
-
-            <Fade left>
-              <NavLink
-                to="/#education"
-                smooth={true}
-                spy="true"
-                duration={2000}
-              >
-                <div className={classes.drawerItem}>
-                  <HiDocumentText className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Education</span>
-                </div>
-              </NavLink>
-            </Fade>
-
-            <Fade left>
-              <NavLink to="/#skills" smooth={true} spy="true" duration={2000}>
-                <div className={classes.drawerItem}>
-                  <BsFillGearFill className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Skills</span>
-                </div>
-              </NavLink>
-            </Fade>
-
-            <Fade left>
-              <NavLink to="/#projects" smooth={true} spy="true" duration={2000}>
-                <div className={classes.drawerItem}>
-                  <FaFolderOpen className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Projects</span>
-                </div>
-              </NavLink>
-            </Fade>
-            <Fade left>
-              <NavLink
-                to="/#experience"
-                smooth={true}
-                spy="true"
-                duration={2000}
-              >
-                <div className={classes.drawerItem}>
-                  <FaFolderOpen className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Experience</span>
-                </div>
-              </NavLink>
-            </Fade>
-            <Fade left>
-              <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
-                <div className={classes.drawerItem}>
-                  <MdPhone className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Contact</span>
-                </div>
-              </NavLink>
-            </Fade>
+        <Box style={{ display: "flex" }}>
+          <NavLink className="nav-link home" to="/">
+            Home
+          </NavLink>
+          <NavLink className="nav-link about" to="/#about">
+            About
+          </NavLink>
+          <NavLink className="nav-link skills" to="/#skills">
+            Skills
+          </NavLink>
+          <NavLink className="nav-link projects" to="/#projects">
+            Projects
+          </NavLink>
+          <NavLink className="nav-link contact" to="/#contact">
+            Contact
+          </NavLink>
+        </Box>
+        <Drawer
+          variant="temporary"
+          onClose={(event, reason) => {
+            if (reason !== "backdropClick") {
+              handleDrawerClose();
+            } else if (reason !== "escapeKeyDown") {
+              handleDrawerClose();
+            }
+          }}
+          anchor="left"
+          open={open}
+          classes={{ paper: classes.MuiDrawer }}
+          className="drawer"
+          disableScrollLock={true}
+        >
+          <div className="div-closebtn">
+            <CloseIcon
+              onClick={handleDrawerClose}
+              onKeyDown={(e) => {
+                if (e.key === " " || e.key === "Enter") {
+                  e.preventDefault();
+                  handleDrawerClose();
+                }
+              }}
+              className={classes.closebtnIcon}
+              role="button"
+              tabIndex="0"
+              aria-label="Close"
+            />
           </div>
-        </div>
-      </Drawer>
-    </div>
+          <br />
+
+          <div onClick={handleDrawerClose}>
+            <div className="navLink--container">
+              <Fade left>
+                <NavLink to="/" smooth={true} spy="true" duration={2000}>
+                  <div className={classes.drawerItem}>
+                    <IoHomeSharp className={classes.drawerIcon} />
+                    <span className={classes.drawerLinks}>Home</span>
+                  </div>
+                </NavLink>
+              </Fade>
+
+              <Fade left>
+                <NavLink
+                  to="/#about"
+                  smooth={true}
+                  spy="true"
+                  duration={2000}
+                  className={"nav-link about"}
+                >
+                  <div className={classes.drawerItem}>
+                    <FaUser className={classes.drawerIcon} />
+                    <span className={classes.drawerLinks}>About</span>
+                  </div>
+                </NavLink>
+              </Fade>
+
+              <Fade left>
+                <NavLink
+                  to="/#education"
+                  smooth={true}
+                  spy="true"
+                  duration={2000}
+                >
+                  <div className={classes.drawerItem}>
+                    <HiDocumentText className={classes.drawerIcon} />
+                    <span className={classes.drawerLinks}>Education</span>
+                  </div>
+                </NavLink>
+              </Fade>
+
+              <Fade left>
+                <NavLink to="/#skills" smooth={true} spy="true" duration={2000}>
+                  <div className={classes.drawerItem}>
+                    <BsFillGearFill className={classes.drawerIcon} />
+                    <span className={classes.drawerLinks}>Skills</span>
+                  </div>
+                </NavLink>
+              </Fade>
+
+              <Fade left>
+                <NavLink
+                  to="/#projects"
+                  smooth={true}
+                  spy="true"
+                  duration={2000}
+                >
+                  <div className={classes.drawerItem}>
+                    <FaFolderOpen className={classes.drawerIcon} />
+                    <span className={classes.drawerLinks}>Projects</span>
+                  </div>
+                </NavLink>
+              </Fade>
+              <Fade left>
+                <NavLink
+                  to="/#experience"
+                  smooth={true}
+                  spy="true"
+                  duration={2000}
+                >
+                  <div className={classes.drawerItem}>
+                    <FaFolderOpen className={classes.drawerIcon} />
+                    <span className={classes.drawerLinks}>Experience</span>
+                  </div>
+                </NavLink>
+              </Fade>
+              <Fade left>
+                <NavLink
+                  to="/#contacts"
+                  smooth={true}
+                  spy="true"
+                  duration={2000}
+                >
+                  <div className={classes.drawerItem}>
+                    <MdPhone className={classes.drawerIcon} />
+                    <span className={classes.drawerLinks}>Contact</span>
+                  </div>
+                </NavLink>
+              </Fade>
+            </div>
+          </div>
+        </Drawer>
+      </div>
+    </>
   );
 }
 
