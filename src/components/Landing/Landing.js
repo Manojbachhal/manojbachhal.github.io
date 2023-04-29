@@ -111,7 +111,7 @@ function Landing() {
               {headerData.resumePdf && (
                 <a
                   href={headerData.resumePdf}
-                  download={resume}
+                  // download="resume"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -119,7 +119,7 @@ function Landing() {
                     className={classes.resumeBtn}
                     onClick={() => {
                       window.open(
-                        "https://drive.google.com/file/d/1U8x4DKkLwn9k8Vi1fquqlAz5C1hf8brY/view?usp=share_link"
+                        "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
                       );
                     }}
                     id="resume-button-2"
