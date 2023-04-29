@@ -9,7 +9,7 @@ import { headerData } from "../../data/headerData";
 import { socialsData } from "../../data/socialsData";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-
+import resume from "../../assets/pdf/resume.pdf";
 function Landing() {
   const { theme, drawerOpen } = useContext(ThemeContext);
 
@@ -116,7 +116,7 @@ function Landing() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button
+                  {/* <Button
                     className={classes.resumeBtn}
                     onClick={() => {
                       window.open(
@@ -124,9 +124,18 @@ function Landing() {
                       );
                     }}
                     id="resume-button-1"
+                  > */}
+                  <a
+                    href={resume}
+                    // href="https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
+                    id="resume-button-1"
+                    className={classes.resumeBtn}
+                    download
                   >
                     Download CV
-                  </Button>
+                  </a>
+                  {/* Download CV */}
+                  {/* </Button> */}
                 </a>
               )}
               <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
