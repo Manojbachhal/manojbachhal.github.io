@@ -1,5 +1,6 @@
 export const aboutData = {
-  title: "Who I am",
+  // title: "Who I am",
+  title: "About",
   description1:
     "Hello! My name is Manoj Kumar. I'm an aspiring Full Stack web developer based in India.",
   description2:

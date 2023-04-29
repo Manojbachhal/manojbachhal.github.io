@@ -152,6 +152,7 @@ function Navbar() {
             id="navicon"
           />
         </div>
+        {/* temp div for test cases  */}
         <Box style={{ display: "flex" }}>
           <NavLink className="nav-link home" to="/">
             Home
@@ -172,6 +173,7 @@ function Navbar() {
             Resume
           </NavLink>
         </Box>
+        {/* temp div end */}
         <Drawer
           variant="temporary"
           onClose={(event, reason) => {
