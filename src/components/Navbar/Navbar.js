@@ -139,11 +139,10 @@ function Navbar() {
   };
 
   const handleClick = () => {
-    // window.open(
-    //   "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"
-    // );
-    const url =
-      "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view";
+    window.open(
+      "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"
+    );
+    const url = resume;
     const link = document.createElement("a");
     link.href = url;
     link.download = "file.pdf";
