@@ -187,13 +187,13 @@ function Navbar() {
           </NavLink>
           {/* <NavLink  to="/#resume"> */}
 
-          <p
+          <button
             className="nav-link resume"
             id="resume-button-1"
             onClick={handleClick}
           >
             resume
-          </p>
+          </button>
 
           {/* </NavLink> */}
         </Box>
