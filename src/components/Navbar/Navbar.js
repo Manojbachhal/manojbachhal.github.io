@@ -15,6 +15,7 @@ import "./Navbar.css";
 import { headerData } from "../../data/headerData";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import shadows from "@material-ui/core/styles/shadows";
+import resume from "../../assets/pdf/resume.pdf";
 
 function Navbar() {
   //   console.log(shadows);
@@ -170,6 +171,15 @@ function Navbar() {
             Contact
           </NavLink>
           <NavLink className="nav-link resume" to="/#contacts">
+            <a
+              href={resume}
+              // href="https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
+              id="resume-button-1"
+              className={classes.resumeBtn}
+              download
+            >
+              Download CV
+            </a>
             Resume
           </NavLink>
         </Box>
