@@ -168,6 +168,9 @@ function Navbar() {
           <NavLink className="nav-link contact" to="/#contacts">
             Contact
           </NavLink>
+          <NavLink className="nav-link resume" to="/#contacts">
+            Resume
+          </NavLink>
         </Box>
         <Drawer
           variant="temporary"
