@@ -60,7 +60,18 @@ function Landing() {
   }));
 
   const classes = useStyles();
-
+  const handleClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
+    );
+    const url = resume;
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "file.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="landing" id="home">
       <div className="landing--container">
@@ -108,7 +119,7 @@ function Landing() {
             <p>{headerData.desciption}</p>
 
             <div className="lcr-buttonContainer">
-              {headerData.resumePdf && (
+              {/* {headerData.resumePdf && (
                 <a
                   href={headerData.resumePdf}
                   download={resume}
@@ -127,7 +138,17 @@ function Landing() {
                     Download CV
                   </Button>
                 </a>
-              )}
+              )} */}
+              <p
+                // href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
+                // download
+                style={{ color: "red" }}
+                className="nav-link resume"
+                id="resume-button-2"
+                onClick={handleClick}
+              >
+                resume
+              </p>
               <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
                 <Button className={classes.contactBtn}>Contact</Button>
               </NavLink>
