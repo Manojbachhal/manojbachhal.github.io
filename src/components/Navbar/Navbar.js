@@ -167,7 +167,11 @@ function Navbar() {
           />
         </div>
         {/* temp div for test cases  */}
-        <Box>
+        <Box
+          style={{
+            display: "flex",
+          }}
+        >
           <NavLink className="nav-link home" to="/">
             Home
           </NavLink>
