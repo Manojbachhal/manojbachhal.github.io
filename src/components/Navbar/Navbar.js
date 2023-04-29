@@ -139,6 +139,20 @@ function Navbar() {
     }
   };
 
+  const handleClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"
+    );
+    const url =
+      "https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv";
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "file.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <div className="navbar" id="nav-menu">
@@ -173,17 +187,13 @@ function Navbar() {
           </NavLink>
           {/* <NavLink  to="/#resume"> */}
 
-          <Button
+          <p
             className="nav-link resume"
             id="resume-button-1"
-            onClick={() => {
-              window.open(
-                "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
-              );
-            }}
+            onClick={handleClick}
           >
             resume
-          </Button>
+          </p>
 
           {/* </NavLink> */}
         </Box>
