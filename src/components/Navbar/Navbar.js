@@ -9,6 +9,7 @@ import { FaUser, FaFolderOpen } from "react-icons/fa";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
+import { Box } from "@material-ui/core";
 
 import "./Navbar.css";
 import { headerData } from "../../data/headerData";
@@ -150,6 +151,11 @@ function Navbar() {
           id="navicon"
         />
       </div>
+      <Box>
+        <NavLink className="nav-link home" to="/">
+          Home
+        </NavLink>
+      </Box>
       <Drawer
         variant="temporary"
         onClose={(event, reason) => {
@@ -184,16 +190,14 @@ function Navbar() {
 
         <div onClick={handleDrawerClose}>
           <div className="navLink--container">
-            <span className={"nav-link home"}>
-              <Fade left>
-                <NavLink to="/" smooth={true} spy="true" duration={2000}>
-                  <div className={classes.drawerItem}>
-                    <IoHomeSharp className={classes.drawerIcon} />
-                    <span className={classes.drawerLinks}>Home</span>
-                  </div>
-                </NavLink>
-              </Fade>
-            </span>
+            <Fade left>
+              <NavLink to="/" smooth={true} spy="true" duration={2000}>
+                <div className={classes.drawerItem}>
+                  <IoHomeSharp className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Home</span>
+                </div>
+              </NavLink>
+            </Fade>
 
             <Fade left>
               <NavLink
