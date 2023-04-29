@@ -89,6 +89,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
         <span className="project-github-link"> Temp span</span>
         <span className="project-github-link"> Temp span</span>
         <span className="project-deployed-link"> Temp span</span>
+        {/* span end */}
         <p
           className="project--desc"
           style={{
