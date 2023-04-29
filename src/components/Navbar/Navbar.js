@@ -167,7 +167,7 @@ function Navbar() {
           />
         </div>
         {/* temp div for test cases  */}
-        <Box
+        {/* <Box
           style={{
             display: "flex",
           }}
@@ -195,7 +195,7 @@ function Navbar() {
           >
             resume
           </p>
-        </Box>
+        </Box> */}
         {/* temp div end */}
         <Drawer
           variant="temporary"

@@ -84,11 +84,11 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
           </div>
         </div>
         {/* temp span for project */}
-        <span className="project-description"> Temp span</span>
+        {/* <span className="project-description"> Temp span</span>
         <span className="project-tech-stack"> Temp span</span>
         <span className="project-github-link"> Temp span</span>
         <span className="project-github-link"> Temp span</span>
-        <span className="project-deployed-link"> Temp span</span>
+        <span className="project-deployed-link"> Temp span</span> */}
         {/* span end */}
         <p
           className="project--desc"

@@ -34,28 +34,32 @@ function GithubCalenderComp() {
         <h1 style={{ color: theme.primary }}>My Statistics</h1>
       </div>
       <div className="stats-Div">
-        <img
-          align="center"
-          id="github-stats-card"
-          src={`https://github-readme-stats.vercel.app/api?username=manojbachhal&amp;show_icons=true&amp;locale=en`}
-          // src={`https://github-readme-stats.vercel.app/api/top-langs/?username=manojbachhal&theme=swift`}
-          alt="Manojbachhal"
-        />
-
-        <img
-          id="github-streak-stats"
-          align="center"
-          src={`https://github-readme-streak-stats.herokuapp.com/?user=manojbachhal;`}
-          alt="manojbachhal"
-        />
-
-        <img
-          align="center"
-          id="github-top-langs"
-          // src={`https://github-readme-stats.vercel.app/api?username=manojbachhal&amp;show_icons=true&amp;locale=en`}
-          src={`https://github-readme-stats.vercel.app/api/top-langs/?username=manojbachhal&theme=swift`}
-          alt="Manojbachhal"
-        />
+        <div>
+          <img
+            align="center"
+            id="github-stats-card"
+            src={`https://github-readme-stats.vercel.app/api?username=manojbachhal&theme=blue-green&amp;show_icons=true&amp;locale=en`}
+            // src={`https://github-readme-stats.vercel.app/api/top-langs/?username=manojbachhal&theme=swift`}
+            alt="Manojbachhal"
+          />
+        </div>
+        <div>
+          <img
+            id="github-streak-stats"
+            align="center"
+            src={`https://github-readme-streak-stats.herokuapp.com/?user=manojbachhal&theme=blue-green&amp;show_icons=true&amp;locale=en;`}
+            alt="manojbachhal"
+          />
+        </div>
+        <div>
+          <img
+            align="center"
+            id="github-top-langs"
+            // src={`https://github-readme-stats.vercel.app/api?username=manojbachhal&amp;show_icons=true&amp;locale=en`}
+            src={`https://github-readme-stats.vercel.app/api/top-langs/?username=manojbachhal&theme=blue-green`}
+            alt="Manojbachhal"
+          />
+        </div>
       </div>
     </div>
   );
