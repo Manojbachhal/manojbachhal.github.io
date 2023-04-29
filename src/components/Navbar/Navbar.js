@@ -188,8 +188,7 @@ function Navbar() {
             Contact
           </NavLink>
           {/* <p
-            // href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
-            // download
+           
             style={{ color: "red" }}
             className="nav-link resume"
             id="resume-button-1"
@@ -197,19 +196,13 @@ function Navbar() {
           >
             resume
           </p> */}
-          <NavLink className="nav-link resume" to="/#resume">
-            <Button
-              className={classes.resumeBtn}
-              // onClick={() => {
-              //   window.open(
-              //     "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
-              //   );
-              // }}
-              id="resume-button-1"
-            >
-              Download CV
-            </Button>
-          </NavLink>
+          <p
+            className="nav-link resume"
+            id="resume-button-1"
+            onClick={handleClick}
+          >
+            resume
+          </p>
         </Box>
         {/* temp div end */}
         <Drawer
