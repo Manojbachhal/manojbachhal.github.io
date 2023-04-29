@@ -122,7 +122,7 @@ function Landing() {
                         "https://drive.google.com/file/d/1U8x4DKkLwn9k8Vi1fquqlAz5C1hf8brY/view?usp=share_link"
                       );
                     }}
-                    id="resume-button-1"
+                    // id="resume-button-2"
                   >
                     Download CV
                   </Button>
