@@ -118,11 +118,16 @@ function Landing() {
                   <Button
                     className={classes.resumeBtn}
                     onClick={() => {
+                      // window.open(
+                      //   "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
+                      // );
+                      // window.location.href =
+                      //   "https://drive.google.com/u/0/uc?id=1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs&export=download";
                       window.open(
-                        "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
+                        "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"
                       );
                       window.location.href =
-                        "https://drive.google.com/u/0/uc?id=1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs&export=download";
+                        "https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv";
                     }}
                     id="resume-button-2"
                   >
