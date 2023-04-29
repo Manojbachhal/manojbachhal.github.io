@@ -137,8 +137,8 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar">
-      <div className="navbar--container" id="nav-menu">
+    <div className="navbar" id="nav-menu">
+      <div className="navbar--container">
         <h1 style={{ color: theme.secondary }} id="user-detail-name">
           {shortname(headerData.name)}
         </h1>
