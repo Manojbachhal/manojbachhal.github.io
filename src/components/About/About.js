@@ -2,10 +2,17 @@ import React, { useContext } from "react";
 import "./About.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { aboutData } from "../../data/aboutData";
+import { Button } from "@material-ui/core";
 
 function About() {
   const { theme } = useContext(ThemeContext);
-
+  const handleClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"
+    );
+    window.location.href =
+      "https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv";
+  };
   return (
     <div
       className="about about section"
@@ -45,6 +52,12 @@ function About() {
           />
         </div>
       </div>
+      <Button
+        onClick={handleClick}
+        download
+        className="button-5"
+        id="resume-button-2"
+      ></Button>
     </div>
   );
 }
