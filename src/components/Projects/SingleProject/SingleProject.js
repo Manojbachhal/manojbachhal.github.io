@@ -83,8 +83,14 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
             </a>
           </div>
         </div>
+        {/* temp span for project */}
+        <span className="project-description"> Temp span</span>
+        <span className="project-tech-stack"> Temp span</span>
+        <span className="project-github-link"> Temp span</span>
+        <span className="project-github-link"> Temp span</span>
+        <span className="project-deployed-link"> Temp span</span>
         <p
-          className="project--desc project-description"
+          className="project--desc"
           style={{
             background: theme.secondary,
             color: theme.tertiary,
