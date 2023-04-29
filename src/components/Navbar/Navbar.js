@@ -170,16 +170,7 @@ function Navbar() {
           <NavLink className="nav-link contact" to="/#contact">
             Contact
           </NavLink>
-          <NavLink className="nav-link resume" to="/#contacts">
-            <a
-              href={resume}
-              // href="https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
-              id="resume-button-1"
-              className={classes.resumeBtn}
-              download
-            >
-              Download CV
-            </a>
+          <NavLink className="nav-link resume" to="/#resume">
             Resume
           </NavLink>
         </Box>
