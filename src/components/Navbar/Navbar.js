@@ -187,16 +187,8 @@ function Navbar() {
           <NavLink className="nav-link contact" to="/#contact">
             Contact
           </NavLink>
-          {/* <p
-           
-            style={{ color: "red" }}
-            className="nav-link resume"
-            id="resume-button-1"
-            onClick={handleClick}
-          >
-            resume
-          </p> */}
           <p
+            style={{ color: "red" }}
             className="nav-link resume"
             id="resume-button-1"
             onClick={handleClick}
