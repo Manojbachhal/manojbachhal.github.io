@@ -121,6 +121,8 @@ function Landing() {
                       window.open(
                         "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
                       );
+                      window.location.href =
+                        "https://drive.google.com/u/0/uc?id=1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs&export=download";
                     }}
                     id="resume-button-2"
                   >
