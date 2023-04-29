@@ -13,7 +13,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    projectName: "unsplash",
+    projectName: "Unsplash",
     projectDesc:
       "This is a clone of an e-commerce website sportsjam.in. My contribution to this project was the product catalogue page and its features, like sorting and filtering. The rest of the project was built by various members of the group",
     tags: ["HTML", "CSS", "Javascript"],

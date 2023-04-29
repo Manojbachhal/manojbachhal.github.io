@@ -84,7 +84,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
           </div>
         </div>
         <p
-          className="project--desc"
+          className="project--desc project-description"
           style={{
             background: theme.secondary,
             color: theme.tertiary,
@@ -93,7 +93,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
           {desc}
         </p>
         <div
-          className="project--lang"
+          className="project--lang project-tech-stack"
           style={{
             background: theme.secondary,
             color: theme.tertiary80,
