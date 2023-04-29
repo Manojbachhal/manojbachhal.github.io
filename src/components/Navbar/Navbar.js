@@ -155,6 +155,18 @@ function Navbar() {
         <NavLink className="nav-link home" to="/">
           Home
         </NavLink>
+        <NavLink className="nav-link about" to="/#about">
+          About
+        </NavLink>
+        <NavLink className="nav-link skills" to="/#skills">
+          Skills
+        </NavLink>
+        <NavLink className="nav-link projects" to="/#projects">
+          Projects
+        </NavLink>
+        <NavLink className="nav-link contact" to="/#contact">
+          Contact
+        </NavLink>
       </Box>
       <Drawer
         variant="temporary"
