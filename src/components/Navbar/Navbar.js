@@ -165,7 +165,7 @@ function Navbar() {
           <NavLink className="nav-link projects" to="/#projects">
             Projects
           </NavLink>
-          <NavLink className="nav-link contact" to="/#contacts">
+          <NavLink className="nav-link contact" to="/#contact">
             Contact
           </NavLink>
           <NavLink className="nav-link resume" to="/#contacts">
