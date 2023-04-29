@@ -185,16 +185,13 @@ function Navbar() {
         <div onClick={handleDrawerClose}>
           <div className="navLink--container">
             <Fade left>
-              <NavLink
-                to="/"
-                smooth={true}
-                spy="true"
-                duration={2000}
-                className={"nav-link home"}
-              >
+              <NavLink to="/" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <IoHomeSharp className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Home</span>
+                  <span className={classes.drawerLinks}>
+                    {" "}
+                    <span className={"nav-link home"}>Home</span>
+                  </span>
                 </div>
               </NavLink>
             </Fade>
