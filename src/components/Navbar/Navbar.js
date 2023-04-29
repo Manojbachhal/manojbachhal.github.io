@@ -171,26 +171,27 @@ function Navbar() {
           <NavLink className="nav-link contact" to="/#contact">
             Contact
           </NavLink>
-          <NavLink className="nav-link resume" to="/#resume">
-            <a
-              href={headerData.resumePdf}
-              // download="resume"
-              target="_blank"
-              rel="noreferrer"
+          {/* <NavLink  to="/#resume"> */}
+          <a
+            href={headerData.resumePdf}
+            // download="resume"
+            target="_blank"
+            rel="noreferrer"
+            className="nav-link resume"
+          >
+            <Button
+              className={classes.resumeBtn}
+              // onClick={() => {
+              //   window.open(
+              //     "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
+              //   );
+              // }}
+              id="resume-button-1"
             >
-              <Button
-                className={classes.resumeBtn}
-                // onClick={() => {
-                //   window.open(
-                //     "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
-                //   );
-                // }}
-                id="resume-button-1"
-              >
-                Download CV
-              </Button>
-            </a>
-          </NavLink>
+              Download CV
+            </Button>
+          </a>
+          {/* </NavLink> */}
         </Box>
         {/* temp div end */}
         <Drawer
