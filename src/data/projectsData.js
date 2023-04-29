@@ -32,4 +32,21 @@ export const projectsData = [
     demo: "https://ikea-clone-ruddy.vercel.app/",
     image: ikea,
   },
+  {
+    id: 4,
+    projectName: "Ikea",
+    projectDesc:
+      "IKEA is a Swedish multinational furniture retailer that designs and sells ready-to-assemble furniture, kitchen appliances and other household goods. It is a collaborative project of three members which was completed in 5 days.",
+    tags: [
+      "React",
+      "Redux",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Bootstrap, Express.js , Mongodb, Node.js",
+    ],
+    code: "https://github.com/Manojbachhal/Ikea_Full-Stack",
+    demo: "https://ikea-clone-zeta.vercel.app/",
+    image: ikea,
+  },
 ];
