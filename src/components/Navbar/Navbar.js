@@ -190,7 +190,7 @@ function Navbar() {
           <NavLink className="nav-link contact" to="/#contact">
             Contact
           </NavLink>
-          <p
+          <Button
             // href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
             // download
             style={{ color: "red" }}
@@ -199,7 +199,7 @@ function Navbar() {
             onClick={handleClick}
           >
             resume
-          </p>
+          </Button>
         </Box>
         {/* temp div end */}
         <Drawer
