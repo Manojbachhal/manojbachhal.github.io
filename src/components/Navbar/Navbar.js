@@ -10,7 +10,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
 import { Box } from "@material-ui/core";
-
 import "./Navbar.css";
 import { headerData } from "../../data/headerData";
 import { ThemeContext } from "../../contexts/ThemeContext";
@@ -140,11 +139,11 @@ function Navbar() {
   };
 
   const handleClick = () => {
-    window.open(
-      "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"
-    );
+    // window.open(
+    //   "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"
+    // );
     const url =
-      "https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv";
+      "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view";
     const link = document.createElement("a");
     link.href = url;
     link.download = "file.pdf";
@@ -169,7 +168,14 @@ function Navbar() {
           />
         </div>
         {/* temp div for test cases  */}
-        <Box style={{ display: "flex" }}>
+        <Box
+          style={{
+            display: "flex",
+            color: "red",
+            background: "green",
+            height: "20px",
+          }}
+        >
           <NavLink className="nav-link home" to="/">
             Home
           </NavLink>
@@ -185,21 +191,16 @@ function Navbar() {
           <NavLink className="nav-link contact" to="/#contact">
             Contact
           </NavLink>
-          {/* <NavLink  to="/#resume"> */}
-
-          <Button
+          <p
+            // href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
+            // download
+            style={{ color: "red" }}
             className="nav-link resume"
-            onClick={() => {
-              window.open(
-                "https://drive.google.com/file/d/1uk9MQMNGk83W7Qu7DK13gSHmO32_CWCs/view?usp=share_link"
-              );
-            }}
             id="resume-button-1"
+            onClick={handleClick}
           >
-            Download CV
-          </Button>
-
-          {/* </NavLink> */}
+            resume
+          </p>
         </Box>
         {/* temp div end */}
         <Drawer
