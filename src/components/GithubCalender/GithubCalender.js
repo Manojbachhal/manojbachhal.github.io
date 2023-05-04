@@ -51,15 +51,15 @@ function GithubCalenderComp() {
             alt="manojbachhal"
           />
         </div>
-        <div>
-          <img
-            align="center"
-            id="github-top-langs"
-            // src={`https://github-readme-stats.vercel.app/api?username=manojbachhal&amp;show_icons=true&amp;locale=en`}
-            src={`https://github-readme-stats.vercel.app/api/top-langs/?username=manojbachhal&theme=blue-green`}
-            alt="Manojbachhal"
-          />
-        </div>
+      </div>
+      <div style={{ marginTop: "1rem" }}>
+        <img
+          align="center"
+          id="github-top-langs"
+          // src={`https://github-readme-stats.vercel.app/api?username=manojbachhal&amp;show_icons=true&amp;locale=en`}
+          src={`https://github-readme-stats.vercel.app/api/top-langs/?username=manojbachhal&theme=blue-green`}
+          alt="Manojbachhal"
+        />
       </div>
     </div>
   );

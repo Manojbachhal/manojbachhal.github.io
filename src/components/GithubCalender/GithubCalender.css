@@ -29,9 +29,9 @@
   
   .stats-Div {
     margin-top: 1rem;
-    display: flex;
-    /* display: grid;
-    grid-template-columns: repeat(2,1fr); */
+    /* display: flex; */
+    display: grid; 
+    grid-template-columns: repeat(2,1fr); 
     gap: 1rem;
   }
   
@@ -47,5 +47,13 @@
     margin: 40px 0;
     font-size: 2.5rem;
     font-family: var(--primaryFont);
+  }
+  @media (max-width:982px) { 
+    .stats-Div {grid-template-columns: repeat(1,1fr)}
+      img#github-streak-stats{
+        width: 453px;
+        height: 175px;
+      } 
+
   }
   
